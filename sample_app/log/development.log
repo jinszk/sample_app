@@ -25,3 +25,234 @@ Migrating to CreatePosts (20190411075815)
   ↳ bin/rails:9
   [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/posts/new" for 10.0.2.2 at 2019-04-12 06:15:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (67.3ms)
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 3.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Post:0x0000561f6ec75450>):
+    2: <%= form_for(@post) do |f| %>
+    3: 
+    4:     <h4>タイトル</h4>
+    5:     <%= f.text_field :title %>
+    6: 
+    7:     <h4>本文</h4>
+    8:     <%= f.text_area :body %>
+  
+app/views/posts/new.html.erb:5:in `block in _app_views_posts_new_html_erb___1922764272848815260_47346500994220'
+app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb___1922764272848815260_47346500994220'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/posts/new" for 10.0.2.2 at 2019-04-12 06:33:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (23.6ms)
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 5.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Post:0x00007fa87839e748>):
+    2: <%= form_for(@post) do |f| %>
+    3: 
+    4:     <h4>タイトル</h4>
+    5:     <%= f.text_field :title %>
+    6: 
+    7:     <h4>本文</h4>
+    8:     <%= f.text_area :body %>
+  
+app/views/posts/new.html.erb:5:in `block in _app_views_posts_new_html_erb___432893303257497655_70180773613440'
+app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb___432893303257497655_70180773613440'
+Started GET "/posts/new" for 10.0.2.2 at 2019-04-12 06:35:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 4.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Post:0x000055962259c078>):
+    2: <%= form_for(@post) do |f| %>
+    3: 
+    4:     <h4>タイトル</h4>
+    5:     <%= f.text_field :title %>
+    6: 
+    7:     <h4>本文</h4>
+    8:     <%= f.text_area :body %>
+  
+app/views/posts/new.html.erb:5:in `block in _app_views_posts_new_html_erb___432893303257497655_47051654202860'
+app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb___432893303257497655_47051654202860'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/posts/new" for 10.0.2.2 at 2019-04-12 06:37:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (25.4ms)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 6.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Post:0x0000563381ed9e18>):
+    2: <%= form_for(@post) do |f| %>
+    3: 
+    4:     <h4>タイトル</h4>
+    5:     <%= f.text_field :title %>
+    6: 
+    7:     <h4>本文</h4>
+    8:     <%= f.text_area :body %>
+  
+app/views/posts/new.html.erb:5:in `block in _app_views_posts_new_html_erb___3284866436898918029_69858115155620'
+app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb___3284866436898918029_69858115155620'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to RemoveNameFromPost (20190412064409)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190412064409_remove_name_from_post.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "titile" varchar DEFAULT NULL, "body" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190412064409_remove_name_from_post.rb:3
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "aposts" ("id","titile","body","created_at","updated_at")
+                     SELECT "id","titile","body","created_at","updated_at" FROM "posts"[0m
+  ↳ db/migrate/20190412064409_remove_name_from_post.rb:3
+  [1m[35m (3.4ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  ↳ db/migrate/20190412064409_remove_name_from_post.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "titile" varchar DEFAULT NULL, "body" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190412064409_remove_name_from_post.rb:3
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "posts" ("id","titile","body","created_at","updated_at")
+                     SELECT "id","titile","body","created_at","updated_at" FROM "aposts"[0m
+  ↳ db/migrate/20190412064409_remove_name_from_post.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  ↳ db/migrate/20190412064409_remove_name_from_post.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190412064409"]]
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/posts/new" for 10.0.2.2 at 2019-04-12 06:46:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (27.7ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 4.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Post:0x000056002bf02720>):
+    2: <%= form_for(@post) do |f| %>
+    3: 
+    4:     <h4>タイトル</h4>
+    5:     <%= f.text_field :title %>
+    6: 
+    7:     <h4>本文</h4>
+    8:     <%= f.text_area :body %>
+  
+app/views/posts/new.html.erb:5:in `block in _app_views_posts_new_html_erb__1768116286705270238_69842713539360'
+app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb__1768116286705270238_69842713539360'
+Started GET "/posts/new" for 10.0.2.2 at 2019-04-12 06:51:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (26.6ms)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 5.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Post:0x00007fc3e0022050>):
+    2: <%= form_for(@post) do |f| %>
+    3: 
+    4:     <h4>タイトル</h4>
+    5:     <%= f.text_field :title %>
+    6: 
+    7:     <h4>本文</h4>
+    8:     <%= f.text_area :body %>
+  
+app/views/posts/new.html.erb:5:in `block in _app_views_posts_new_html_erb___4216041823524562689_47123643139180'
+app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb___4216041823524562689_47123643139180'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bin/rake:23
+Started GET "/posts/new" for 10.0.2.2 at 2019-04-12 06:58:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (24.3ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 5.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Post:0x00007f9d4c1f5810>):
+    2: <%= form_for(@post) do |f| %>
+    3: 
+    4:     <h4>タイトル</h4>
+    5:     <%= f.text_field :title %>
+    6: 
+    7:     <h4>本文</h4>
+    8:     <%= f.text_area :body %>
+  
+app/views/posts/new.html.erb:5:in `block in _app_views_posts_new_html_erb__1683783084825207824_70156781238820'
+app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb__1683783084825207824_70156781238820'
+Started GET "/posts/new" for 10.0.2.2 at 2019-04-12 07:11:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Post:0x0000559fed9b60f8>):
+    2: <%= form_for(@post) do |f| %>
+    3: 
+    4:     <h4>タイトル</h4>
+    5:     <%= f.text_field :title %>
+    6: 
+    7:     <h4>本文</h4>
+    8:     <%= f.text_area :body %>
+  
+app/views/posts/new.html.erb:5:in `block in _app_views_posts_new_html_erb__1683783084825207824_47072687214040'
+app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb__1683783084825207824_47072687214040'
